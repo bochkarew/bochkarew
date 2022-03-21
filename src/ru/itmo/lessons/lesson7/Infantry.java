@@ -12,4 +12,21 @@ public class Infantry extends BattleUnit {
     public void infantryVoid(){
         System.out.println("Метод infantryVoid");
     }
+
+
+
+// можно написать собственню реализацию, которая перепишет родительский метод.
+// переопределение метода родителя
+// если юнит выжил, у него attack уменшается на 3
+
+public boolean runFromField(){
+       if (super.runFromField()){
+          attackScore -= 3;
+           System.out.println("После бегства атака уменьшена на 3");
+          return true;
+       }
+       return false;
+    }
 }
+
+

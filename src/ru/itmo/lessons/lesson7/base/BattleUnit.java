@@ -18,4 +18,17 @@ abstract public class BattleUnit extends Unit {
     public void battleUnitVoid(){
         System.out.println("Метод BattleUnit");
     }
+
+    public boolean runFromField(){
+        if (!isAlive()){
+            System.out.println("юнит не может сбеджать");
+            return false;
+        }
+        healthScore -= 1;
+        if(!isAlive()){
+            System.out.println("юнит не смог сбежать");
+            return false;
+        }
+       return true;
+    }
 }
