@@ -108,5 +108,16 @@ public class FirstLesson {
         int res = start > end ? end - start : 0;
         System.out.println(res); // 0
 
+// ==============================
+        // Задача 1
+
+        int sum = 1000000;
+        if(sum>100000){
+            System.out.println(sum * 0.9);
+        }
+        else System.out.println(sum);
+
+
+
     }
 }

@@ -1,7 +1,8 @@
 package ru.itmo.lessons.lesson7;
+import ru.itmo.lessons.lesson7.base.AttackAble;
 import ru.itmo.lessons.lesson7.base.BattleUnit;
 
-public final class Infantry extends BattleUnit {
+public final class Infantry extends BattleUnit implements AttackAble {
     private final int additionalAttack = 5;
     // FINAL свойство нельзя изменить
     // значение можно задать только при объявлении переменной или через конструктор
@@ -29,6 +30,19 @@ public boolean runFromField(){
           return true;
        }
        return false;
+    }
+
+    @Override
+    public void rest() {
+        plusHealth(1);
+        System.out.println("Отдых пехотинца: здоровье: "+healthScore);
+    }
+
+    @Override
+    public void attack(BattleUnit enemy) {
+        if(enemy.isAlive() && this.isAlive())enemy.minusHealth(attackScore);
+        if(enemy.isAlive()) this.minusHealth(enemy.getAttackScore());
+        if(this.isAlive()) enemy.minusHealth(additionalAttack);
     }
 }
 
