@@ -15,7 +15,8 @@ abstract public class BattleUnit extends Unit {
         return attackScore;
     }
 
-    public void battleUnitVoid(){
+    // переопределять final метод НЕЛЬЗЯ, но вызвать МОЖНО
+    public final void battleUnitVoid(){
         System.out.println("Метод BattleUnit");
     }
 

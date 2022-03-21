@@ -19,6 +19,5 @@ public class Application {
 
         Infantry infantry1 = new Infantry(18, 15);
         infantry1.runFromField();
-
     }
 }
