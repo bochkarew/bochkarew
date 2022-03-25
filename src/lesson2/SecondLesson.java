@@ -1,5 +1,7 @@
 package lesson2;
 
+import java.util.Scanner;
+
 public class SecondLesson {
     public static void main(String[] args) {
         // логические операторы
@@ -109,6 +111,44 @@ public class SecondLesson {
         // в остальных случаях скидка не предусмотрена
 
 
+
+
+        int count = 30;
+        if(count > 90 && count < 100){
+            System.out.println("Оценка: отлично");
+        }
+        else if (count > 60 && count < 89){
+            System.out.println("Оценка Хорошо");
+        }
+        else if (count > 40 && count < 59) {
+            System.out.println("оценка удовлетворительно");
+        }
+        else {
+            System.out.println("попробуйте еще раз");
+        }
+
+
+
+        int aa = 6;
+        int bb = 3;
+        int action = 5;
+        switch (action){
+            case 3:
+                System.out.println(aa + bb);
+                break;
+            case 5:
+                System.out.println(aa - bb);
+                break;
+            case 7:
+                System.out.println( aa * bb);
+                break;
+            case 9:
+                System.out.println(aa / bb);
+                break;
+            default:
+                System.out.println("ERROR!!!");
+
+        }
 
     }
 }

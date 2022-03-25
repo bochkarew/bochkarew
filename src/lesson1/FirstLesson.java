@@ -117,7 +117,17 @@ public class FirstLesson {
         }
         else System.out.println(sum);
 
+        // ========================
 
+        int number = 99;
+        System.out.println((number % 10)+(number / 10));
+
+        // =========================
+
+        int dlina = 10;
+        int shirina = 20;
+        int visota = 30;
+        System.out.println(2 * (dlina * shirina + shirina * visota + dlina * visota));
 
     }
 }
