@@ -11,9 +11,9 @@ public class dz3 {
 
 
         // ==========================
-        System.out.println();
+
         System.out.println("Задача 2");
-        System.out.println();
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число больше нуля");
@@ -27,9 +27,9 @@ public class dz3 {
 
 
         //=========================
-        System.out.println();
+
         System.out.println("Задача 3");
-        System.out.println();
+
 
         int numProgram = (int) (1 + Math.random() * 9); // задаем диапазон от 1 до 9
         int numUser = 20; // число пользователя??
@@ -54,9 +54,9 @@ public class dz3 {
 
 
         //=========================
-        System.out.println();
+
         System.out.println("Задача 4");
-        System.out.println();
+
 
 
         int randomNumber = 1 + (int) (Math.random() * 8);
@@ -84,12 +84,12 @@ public class dz3 {
 
 
         //=========================
-        System.out.println();
+
         System.out.println("Задача 5");
-        System.out.println();
 
 
-        int a = 1, b = 9;
+        int a = 1,
+        int b = 9;
         int c = a + (int) (Math.random() * b);
         System.out.println(c);
         Scanner s = new Scanner(System.in);
