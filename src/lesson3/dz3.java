@@ -88,7 +88,7 @@ public class dz3 {
         System.out.println("Задача 5");
 
 
-        int a = 1,
+        int a = 1;
         int b = 9;
         int c = a + (int) (Math.random() * b);
         System.out.println(c);
