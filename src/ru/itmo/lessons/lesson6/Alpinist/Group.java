@@ -13,10 +13,10 @@ public class Group {
     }
 
 
-    public void addAlpinist(Alpinist... alpinists){ //  books - массив, состоящий из элементов, переданных в метод через запятую
+    public void addAlpinist(Alpinist... alpinists){ //  ю
         System.out.println(Arrays.toString(alpinists));
         for (Alpinist alpinist : alpinists) {
-            addAlpinist(alpinist); // вызов метода addBook(Book book)
+            addAlpinist(alpinist); // в
         }
     }
 
@@ -31,7 +31,7 @@ public class Group {
         System.out.println("Альпинисту " + alpinist.getName() + " по адресу " + alpinist.getAdress() + " не хватило места в группе" +
                 ", она переходит в следующую группу ниже ");
     }
-    // метод добавления нескольких книг на полку
+    //
 
 
 
